@@ -1,4 +1,4 @@
-1export interface OptionsModel {
+export interface OptionsModel {
     [key: string]: {
         type: 'number' | 'array' | 'string';
         options: {
