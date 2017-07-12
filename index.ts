@@ -10,14 +10,14 @@ import {
 } from 'lodash';
 import * as joi from 'joi';
 
-export type OptionsModel = {
+export interface OptionsModel {
   [key: string]: {
     type: 'number' | 'array' | 'string';
     options: {
       [key: string]: any;
     };
   };
-};
+}
 
 const generateJoiScheme = (rootKeys: string[], options: OptionsModel) => {
   const schema = reduce(
