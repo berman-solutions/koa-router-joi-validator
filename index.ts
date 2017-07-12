@@ -38,7 +38,7 @@ const generateJoiScheme = (rootKeys: string[], options: OptionsModel) => {
           } else if (optionEnabled) {
             return prevVal[optionKey]();
           }
-          return prevKey;
+          return prevVal;
         },
         joi[options[currKey].type]()
       );
