@@ -1,0 +1,33 @@
+{
+  "name": "koa-router-joi-validator",
+  "version": "0.0.1",
+  "description": "Koa Middleware for route validation using Joi with super simple JSON schemas! ",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "declaration": true,
+  "repository": "git@github.com:berman-solutions/koa-router-joi-validator.git",
+  "author": "berman-solutions",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "npm run clean -s",
+    "build": "tsc",
+    "clean": "rimraf dist/*",
+    "start": "nodemon --watch '**/*.ts' --exec ts-node 'index.ts'",
+    "test": "jest"
+  },
+  "dependencies": {
+    "joi": "^10.6.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "@types/joi": "^10.4.0",
+    "@types/lodash": "^4.14.68",
+    "@types/node": "^6.0.81",
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.1",
+    "ts-node": "^3.2.0",
+    "tslint-config-airbnb": "^5.2.1",
+    "typescript": "^2.4.1"
+  }
+}
