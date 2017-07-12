@@ -23,7 +23,7 @@ var generateJoiScheme = function (rootKeys, options) {
             else if (optionEnabled) {
                 return prevVal[optionKey]();
             }
-            return prevKey;
+            return prevVal;
         }, joi[options[currKey].type]());
         return __assign({}, prevKey, (_a = {}, _a[currKey] = joiScheme, _a));
         var _a;
