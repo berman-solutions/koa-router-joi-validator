@@ -1,9 +1,9 @@
-export interface OptionsModel {
-    [key: string]: {
-        type: 'number' | 'array' | 'string';
-        options: {
-            [key: string]: any;
-        };
+export interface ptionsModel {
+  [key: string]: {
+    type: string;
+    options: {
+      [key: string]: any;
     };
+  };
 }
-export declare function validator(options: OptionsModel): any;
+export declare function validator(options: OptionsModel): any

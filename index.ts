@@ -12,7 +12,7 @@ import * as joi from 'joi';
 
 export interface OptionsModel {
   [key: string]: {
-    type: 'number' | 'array' | 'string';
+    type: string;
     options: {
       [key: string]: any;
     };
