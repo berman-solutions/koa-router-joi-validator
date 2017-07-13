@@ -1,13 +1,4 @@
-import {
-  call,
-  map,
-  invokeMap,
-  reduce,
-  isBoolean,
-  indexOf,
-  sortBy,
-  mapKeys
-} from 'lodash';
+import { reduce, isBoolean } from 'lodash';
 import * as joi from 'joi';
 
 export interface OptionsModel {

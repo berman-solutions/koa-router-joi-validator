@@ -1,24 +1,21 @@
 {
   "compilerOptions": {
-    "lib": ["es6"], // we target Node.js(v6)
-    "module": "commonjs", // export compatibility
-    "target": "es5", // we target Node.js(v6)
-    "moduleResolution": "node", // we target Node.js(v6)
-    "declaration": true, // generate TypeScript definitions
+    "lib": ["es6"],
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "declaration": true,
     "rootDir": ".",
     "strict": true,
     "noImplicitAny": false,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "removeComments": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "outDir": "dist", // transpile JS in this directory
-    "types" : ["node", "jest"] // only use needed types
+    "outDir": "dist",
+    "types": ["node", "jest"]
   },
-  "include": [
-    "index.ts",
-    "lib/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["index.ts", "lib/**/*"],
+  "exclude": ["node_modules"]
 }
