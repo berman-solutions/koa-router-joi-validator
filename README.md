@@ -18,7 +18,7 @@ const usersSchema = {
     }
 };
 
-router.post('/users', validate(usersSchema), ctx => {
+router.post('/users', validator(usersSchema), ctx => {
     ctx.body = 'Users route after validation!';
 })
 ```
