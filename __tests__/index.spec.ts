@@ -15,6 +15,19 @@ describe('validator', () => {
       middleware(ctx, next);
       expect(next.mock.calls.length).toBe(1);
     });
+    test('should ignore parameter with false value', () => {
+      const schema = {
+        id: { type: 'number', options: { integer: false } }
+      };
+      const middleware = validator(schema);
+      const ctx = {
+        body: null,
+        request: { body: { id: '123' } }
+      };
+      const next = jest.fn();
+      middleware(ctx, next);
+      expect(next.mock.calls.length).toBe(1);
+    });
   });
   describe('invalid schema', () => {
     test('should fail on incorrect max number', () => {
