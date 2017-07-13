@@ -1,46 +1,34 @@
 import { validator } from '../';
 
 describe('validator', () => {
-  let usersSchema = null;
-  beforeEach(() => {
-    usersSchema = {
-      id: {
-        type: 'number',
-        options: { integer: true, max: 10 }
-      },
-      username: {
-        type: 'string',
-        options: { required: true }
-      }
-    };
+  describe('valid schema', () => {
+    test('should call next()', () => {
+      const schema = {
+        id: { type: 'number', options: { integer: true } }
+      };
+      const middleware = validator(schema);
+      const next = jest.fn();
+      const ctx = {
+        body: null,
+        request: { body: { id: 3 } }
+      };
+      middleware(ctx, next);
+      expect(next.mock.calls.length).toBe(1);
+    });
   });
-  test('validate should call next() ones', () => {
-    const middleware = validator(usersSchema);
-    const next = jest.fn();
-    const ctx = {
-      body: null,
-      request: {
-        body: {
-          id: 3,
-          username: 'tobi'
-        }
-      }
-    };
-    middleware(ctx, next);
-    expect(next.mock.calls.length).toBe(1);
-  });
-  test('should return an error to ctx.body', () => {
-    const middleware = validator(usersSchema);
-    const ctx = {
-      body: null,
-      request: {
-        body: {
-          id: 13,
-          username: 'tobi'
-        }
-      }
-    };
-    middleware(ctx);
-    expect(ctx.body.name).toBe('ValidationError');
+  describe('invalid schema', () => {
+    test('should fail on incorrect max number', () => {
+      const schema = {
+        id: { type: 'number', options: { max: 1 } }
+      };
+      const middleware = validator(schema);
+      const ctx = {
+        body: null,
+        request: { body: { id: 13 } }
+      };
+      middleware(ctx);
+      expect(ctx.body.name).toBe('ValidationError');
+      expect(ctx.body.details[0].type).toBe('number.max');
+    });
   });
 });
