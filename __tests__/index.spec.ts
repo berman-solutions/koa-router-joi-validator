@@ -44,4 +44,13 @@ describe('validator', () => {
       expect(ctx.body.details[0].type).toBe('number.max');
     });
   });
+  describe('broken request', () => {
+    test('should throw if request is empty', () => {
+      const schema = {
+        id: { type: 'number', options: { max: 1 } }
+      };
+      const middleware = validator(schema);
+      expect(middleware).toThrowError('Request cannot be empty.');
+    });
+  });
 });

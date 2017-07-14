@@ -1,4 +1,4 @@
-import { reduce, isBoolean } from 'lodash';
+import { isNil, reduce, isBoolean } from 'lodash';
 import * as joi from 'joi';
 
 export interface OptionsModel {
@@ -45,6 +45,9 @@ export function validator(options: OptionsModel): any {
   const schema = generateJoiScheme(rootKeys, options);
 
   return (ctx, next) => {
+    if (isNil(ctx && ctx.request)) {
+      throw new Error('Request cannot be empty.');
+    }
     const result = joi.validate(ctx.request.body, schema);
 
     if (!result.error) {
