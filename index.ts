@@ -41,6 +41,9 @@ const generateJoiScheme = (rootKeys: string[], options: OptionsModel) => {
 };
 
 export function validator(options: OptionsModel): any {
+  if (isNil(options)) {
+    throw new Error('Schema cannot be empty.');
+  }
   const rootKeys = Object.keys(options);
   const schema = generateJoiScheme(rootKeys, options);
 
