@@ -9,7 +9,9 @@
   "author": "berman-solutions",
   "license": "MIT",
   "scripts": {
-    "prebuild": "npm run clean -s",
+    "predeploy": "npm run build",
+    "deploy": "git push origin",
+    "prebuild": "npm run clean",
     "build": "tsc",
     "clean": "rimraf dist/*",
     "start": "nodemon --watch '**/*.ts' --exec ts-node 'index.ts'",
@@ -37,10 +39,6 @@
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js"]
   }
 }

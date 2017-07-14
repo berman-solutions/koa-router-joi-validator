@@ -43,7 +43,7 @@ describe('validator', () => {
       expect(ctx.body.name).toBe('ValidationError');
       expect(ctx.body.details[0].type).toBe('number.max');
     });
-    test('should throw when schema is undefined', () => {
+    test('should throw when schema is undefined or null', () => {
       expect(validator).toThrowError('Schema cannot be empty.');
     });
   });

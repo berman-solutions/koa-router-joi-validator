@@ -31,6 +31,9 @@ var generateJoiScheme = function (rootKeys, options) {
     return schema;
 };
 function validator(options) {
+    if (lodash_1.isNil(options)) {
+        throw new Error('Schema cannot be empty.');
+    }
     var rootKeys = Object.keys(options);
     var schema = generateJoiScheme(rootKeys, options);
     return function (ctx, next) {
