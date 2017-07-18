@@ -1,6 +1,6 @@
 {
   "name": "koa-router-joi-validator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Koa Middleware for route validation using Joi with super simple JSON schemas! ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,7 @@
     "clean": "rimraf dist coverage",
     "start": "nodemon --watch 'src/**/*.ts' --exec ts-node 'src/index.ts'",
     "start:prod": "node dist/index.js",
+    "publish": "npm publish",
     "test": "jest --no-cache"
   },
   "dependencies": {
