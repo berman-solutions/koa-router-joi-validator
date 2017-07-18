@@ -6,6 +6,3 @@ before_script:
 script:
   - node app.js
   - npm test
-cache:
-  directories:
-    - node_modules
