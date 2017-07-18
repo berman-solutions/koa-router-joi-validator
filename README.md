@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/berman-solutions/koa-router-joi-validator.svg?branch=master)](https://travis-ci.org/berman-solutions/koa-router-joi-validator)
+
 # koa-router-joi-validator
 
 ### Installation:
