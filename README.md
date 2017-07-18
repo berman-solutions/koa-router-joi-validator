@@ -9,17 +9,16 @@
 
 ## Install:
 ```
-npm i @bermansolutions/koa-router-joi-validator
+npm i koa-router-joi-validator
 ```
 if you are using yarn:
 ```
-yarn add @bermansolutions/koa-router-joi-validator
+yarn add koa-router-joi-validator
 ```
 
 ## Usage:
 ```javascript
-import KoaRouter from 'koa-router';
-import { validator } from '@bermansolutions/koa-router-joi-validator';
+import { validator } from 'koa-router-joi-validator';
 
 const usersSchema = {
     id: {
