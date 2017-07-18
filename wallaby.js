@@ -1,11 +1,6 @@
 module.exports = function() {
   return {
-    files: [
-      'tsconfig.json', // <--
-      'src/**/*.ts',
-      '*.ts',
-      '!src/**/__tests__/**/*.ts'
-    ],
+    files: ['tsconfig.json', 'src/**/*.ts', '!src/**/__tests__/**/*.ts'],
 
     tests: ['__tests__/**/*.ts', '__tests__/*.ts'],
 

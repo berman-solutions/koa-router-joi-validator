@@ -1,2 +1,7 @@
 src
 __tests__
+coverage
+.travis.yml
+.editorconfig
+wallaby.js
+tslint.json

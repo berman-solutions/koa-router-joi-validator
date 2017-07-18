@@ -5,17 +5,17 @@
     "target": "es6",
     "moduleResolution": "node",
     "declaration": true,
-    "rootDir": ".",
+    "rootDir": "src",
     "strict": true,
     "noImplicitAny": false,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "removeComments": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": false,
     "outDir": "dist",
     "types": ["node", "jest"]
   },
-  "include": ["index.ts", "lib/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }

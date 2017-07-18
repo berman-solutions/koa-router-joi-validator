@@ -1,4 +1,4 @@
-import { validator } from '../';
+import { validator } from '../src/index';
 
 describe('validator', () => {
   describe('valid schema', () => {
