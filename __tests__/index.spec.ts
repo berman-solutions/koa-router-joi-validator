@@ -40,7 +40,7 @@ describe('validator', () => {
         request: { body: { id: 13 } }
       };
       middleware(ctx);
-      expect(ctx.body.name).toBe('ValidationError');
+      expect(ctx.body.name).toBe('1ValidationError');
       expect(ctx.body.details[0].type).toBe('number.max');
     });
     test('should throw when schema is undefined or null', () => {
