@@ -1,9 +1,10 @@
 [![Build Status](https://travis-ci.org/berman-solutions/koa-router-joi-validator.svg?branch=master)](https://travis-ci.org/berman-solutions/koa-router-joi-validator)
 [![codecov](https://codecov.io/gh/berman-solutions/koa-router-joi-validator/branch/master/graph/badge.svg)](https://codecov.io/gh/berman-solutions/koa-router-joi-validator)
+[![npm version](https://badge.fury.io/js/koa-router-joi-validator.svg)](https://badge.fury.io/js/koa-router-joi-validator)
 [![Known Vulnerabilities](https://snyk.io/test/github/berman-solutions/koa-router-joi-validator/badge.svg)](https://snyk.io/test/github/berman-solutions/koa-router-joi-validator)
 [![dependencies Status](https://david-dm.org/berman-solutions/koa-router-joi-validator/status.svg)](https://david-dm.org/berman-solutions/koa-router-joi-validator)
 [![devDependencies Status](https://david-dm.org/berman-solutions/koa-router-joi-validator/dev-status.svg)](https://david-dm.org/berman-solutions/koa-router-joi-validator?type=dev)
-[![npm version](https://badge.fury.io/js/koa-router-joi-validator.svg)](https://badge.fury.io/js/koa-router-joi-validator)
+
 
 # koa-router-joi-validator
 
