@@ -7,6 +7,7 @@
 
 
 # koa-router-joi-validator
+### Koa Middleware for route validation using Joi with super simple JSON schemas !
 
 ## Install:
 ```
