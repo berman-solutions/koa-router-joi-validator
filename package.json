@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "joi": "^10.6.0",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
     "@types/jest": "^20.0.2",
