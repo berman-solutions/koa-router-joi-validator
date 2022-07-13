@@ -4,6 +4,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/berman-solutions/koa-router-joi-validator/badge.svg)](https://snyk.io/test/github/berman-solutions/koa-router-joi-validator)
 [![dependencies Status](https://david-dm.org/berman-solutions/koa-router-joi-validator/status.svg)](https://david-dm.org/berman-solutions/koa-router-joi-validator)
 [![devDependencies Status](https://david-dm.org/berman-solutions/koa-router-joi-validator/dev-status.svg)](https://david-dm.org/berman-solutions/koa-router-joi-validator?type=dev)
+<a href="https://communityinviter.com/apps/koa-js/koajs" rel="KoaJs Slack Community">![KoaJs Slack](https://img.shields.io/badge/Koa.Js-Slack%20Channel-Slack.svg?longCache=true&style=for-the-badge)</a>
 
 
 # koa-router-joi-validator
